@@ -285,8 +285,10 @@
         },
         fontsKey: function(keys, done) {
             if (this.options.excludeJsFonts) {
+                console.log("Flash Fonts");
                 return this.flashFontsKey(keys, done);
             }
+            console.log("JS Fonts");
             return this.jsFontsKey(keys, done);
         },
         // flash fonts (will increase fingerprinting time 20X to ~ 130-150ms)
