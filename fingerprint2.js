@@ -117,6 +117,7 @@
         userAgentKey: function(keys) {
             if(!this.options.excludeUserAgent) {
                 keys.userAgent = navigator.userAgent;
+                console.log("CHECKING USER AGENT")
             }
             return keys;
         },
